@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Bootstrap Website</title>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script
+      defer
+      src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand">
+        <div
+          class="container-fluid justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <!-- feed icon -->
+          <a href="feed.html" class="icon-link me-auto">
+            <i class="fa-solid fa-newspaper"></i>
+          </a>
+          <!-- search form -->
+          <form
+            class="d-flex position-absolute top-50 start-50 translate-middle"
+          >
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+          <!-- profile icon -->
+          <a href="profile.html" class="icon-link ms-auto">
+            <i class="fas fa-user"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container my-4">
+        <!-- Add Post Form -->
+        <div class="add-post-form mb-5">
+          <h2 class="text-center mb-4">Your Petal Tale</h2>
+          <form>
+            <div class="mb-3">
+              <label for="flowerName" class="form-label"></label>
+              <input
+                type="text"
+                class="form-control"
+                id="flowerName"
+                placeholder="Enter flower name"
+                required
+                aria-label="Flower Name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="location" class="form-label"></label>
+              <input
+                type="text"
+                class="form-control"
+                id="location"
+                placeholder="Enter location"
+                required
+                aria-label="Location"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="date" class="form-label"></label>
+              <input type="date" class="form-control" id="date" required />
+            </div>
+            <div class="mb-3">
+              <label for="story" class="form-label"></label>
+              <textarea
+                class="form-control"
+                id="story"
+                rows="3"
+                placeholder="Share your story"
+                required
+                aria-label="Date"
+              ></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Post</button>
+            </div>
+          </form>
+        </div>
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-12 mb-4">
+            <div class="card">
+              <img
+                src="media/lupine.png"
+                class="card-img-top img-fluid"
+                alt="Blue Lupine"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  Blue Lupine (Lupinus pilosus)
+                </h5>
+                <div
+                  class="icon-descriptions d-flex justify-content-around text-center my-2"
+                >
+                  <div class="icon-container">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Santa Amaro, Portugal</p>
+                  </div>
+                  <div class="icon-container">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <p>18.03.2024</p>
+                  </div>
+                  <div class="icon-container">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>666</p>
+                  </div>
+                </div>
+                <p class="card-text">
+                  "It was just an ordinary day for us, a young couple in love,
+                  taking our daily walk to the local store through the charming
+                  streets of Santa Amaro. As we walked through our local jungle
+                  park, both our steps slowed, and our conversation halted at
+                  the sight before us. A sea of Blue Lupines, bathed in the
+                  gentle light of the morning sun, had transformed an ordinary
+                  field into an ethereal landscape. Mesmerized, we ventured
+                  closer, the scent of the blooms enveloping us, the vivid blue
+                  petals sparkling with dew under the early sun’s caress. In
+                  that moment, surrounded by the lupines serene beauty, it felt
+                  as though time stood still. We forgot about the errands that
+                  awaited us, lost in the tranquility of nature's masterpiece.
+                  It was a spontaneous detour, a moment of unexpected beauty
+                  that would forever remain in our hearts & memories. The Blue
+                  Lupines didn't just color the landscape; they painted a memory
+                  of love, beauty, and serendipity in our hearts.
+                  <br />
+                  <br />
+                  On such days, you come to understand that love indeed powers
+                  everything."
+                </p>
+                <a href="profile.html" class="d-block text-center mt-4"
+                  >@ BotanicalBabe</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-12 mb-4">
+            <div class="card">
+              <img
+                src="media/arctic.png"
+                class="card-img-top img-fluid"
+                alt="Blue Lupine"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  The Arctic Violet (Viola labradorica)
+                </h5>
+                <div
+                  class="icon-descriptions d-flex justify-content-around text-center my-2"
+                >
+                  <div class="icon-container">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Stavern, Norge</p>
+                  </div>
+                  <div class="icon-container">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <p>10.04.2022</p>
+                  </div>
+                  <div class="icon-container">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>473</p>
+                  </div>
+                </div>
+                <p class="card-text">
+                  "In the quaint town of Stavern, known for its artists and
+                  naval history, I found something unexpectedly profound during
+                  a spring hike in April 2022. Nestled among the rocks, away
+                  from the well-trodden paths, was a patch of Arctic Violets,
+                  their purple hues a stark contrast to the rugged landscape. As
+                  an amateur botanist, I knew of their rarity and the symbol of
+                  endurance they represented. Inspired, I picked a single violet
+                  and later pressed it into a book, a memento of that day's
+                  revelation. This tiny, resilient flower motivated me to pursue
+                  my dreams, reminding me daily that beauty and strength lie in
+                  the ability to thrive despite challenges. The Arctic Violet,
+                  from that chilly spring day in Stavern, is not just a flower
+                  in my book; it's a bookmark to the chapter where my life took
+                  a courageous turn toward following my passion."
+                </p>
+                <a href="profile.html" class="d-block text-center mt-4"
+                  >@ Thistle_Thrillseeker</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-12 mb-4">
+            <div class="card">
+              <img
+                src="media/golden.png"
+                class="card-img-top img-fluid"
+                alt="Blue Lupine"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  The Golden Trumpet Tree (Handroanthus albus)
+                </h5>
+                <div
+                  class="icon-descriptions d-flex justify-content-around text-center my-2"
+                >
+                  <div class="icon-container">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Santos, Brasil</p>
+                  </div>
+                  <div class="icon-container">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <p>10.09.2021</p>
+                  </div>
+                  <div class="icon-container">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>111</p>
+                  </div>
+                </div>
+                <p class="card-text">
+                  "In the heart of Santos, Brazil, amidst the bustling city
+                  life, there exists a hidden oasis where the Golden Trumpet
+                  Trees bloom with such vigor, they seem to capture the essence
+                  of the sun itself. It was early september 2021, just as the
+                  city shrugged off the remnants of winter, that I stumbled upon
+                  this spectacle on a morning jog through the botanical gardens.
+                  Each tree was a beacon of light, its yellow blossoms radiating
+                  happiness and the promise of new beginnings. The trees symbols
+                  of joy and renewal, the perfect symbol to fresh beginnings and
+                  brighter futures."
+                </p>
+                <a href="profile.html" class="d-block text-center mt-4"
+                  >@ Blossom_Voyager</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="text-center mb-4">
+            <a href="index.html" class="btn btn-primary">Log Out</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

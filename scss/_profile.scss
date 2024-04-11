@@ -1,0 +1,75 @@
+// Icons
+.card {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  gap: 2em;
+  i {
+    color: $primary-color;
+    font-size: $icon-size-small;
+  }
+
+  p {
+    margin-top: 1em;
+    font-size: 0.8em;
+  }
+}
+
+// Grid
+
+// Cards and images
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1em;
+}
+
+  .img-fluid {
+    width: 80%;
+    height: 30em;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+  }
+
+  h5 {
+    font-size: $font-size;
+    margin-bottom: 0.5em;
+  }
+
+ .icon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5em 0; 
+ }
+
+  i {
+    margin-right: 0.5em; 
+    font-size: $icon-size-small; 
+  }
+
+    .icon-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1em 0;
+
+    i {
+      margin-bottom: 0.5em;
+      font-size: $icon-size-small;
+    }
+
+    .text-group p {
+      margin: 0.25em 0;
+    }
+  }

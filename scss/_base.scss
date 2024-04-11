@@ -1,0 +1,23 @@
+//Header
+
+// Search form
+.form-control {
+  font-size: $font-size-small;
+  padding: 0.25rem 0.5rem;
+  background-color: $primary-color;
+  color: $background-color;
+  &::placeholder {
+    color: $primary-color;
+    text-align: center;
+  }
+}
+
+// Icons
+.icon-link {
+  font-size: $icon-size;
+  color: $primary-color;
+  background-color: $background-color;
+  &:hover {
+    color: darken($primary-color, 10%);
+  }
+}

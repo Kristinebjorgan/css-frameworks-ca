@@ -1,0 +1,12 @@
+// text-center
+.text-center {
+  hr {
+    border-top: 1px solid $primary-color;
+  }
+  .or-text {
+    position: relative;
+    padding: 0 10px;
+    display: inline-block;
+    transform: translateY(-10%);
+  }
+}

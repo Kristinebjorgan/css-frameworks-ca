@@ -1,0 +1,26 @@
+// Variables
+
+//colors
+$primary-color: #46406b;
+$background-color: #f2ecec;
+$navbar-background-color: #46406b;
+$navbar-item-color: #46406b;
+//borders
+$border-radius: 0.25rem;
+//buttons
+$search-btn-color: $primary-color;
+//sizes & font style
+$font-size-small: 1em;
+$font-size: 2em;
+$font-size-large: 3em;
+$icon-size: 2rem;
+$icon-size-large: 2em;
+$icon-size-medium: 1.5em;
+$icon-size-small: 1em;
+$letter-spacing: 0.3em;
+
+body {
+  background-color: $background-color;
+  font-family: "Barlow", sans-serif;
+}
+
